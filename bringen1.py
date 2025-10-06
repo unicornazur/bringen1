@@ -32,6 +32,8 @@ else:
 
 # 정답 확인 함수
 def check_answer():
+    user_answer = str(st.session_state["answer_input"]).strip().lower()
+    
     if st.session_state.direction:
         correct = str(word["German"]).strip().lower()
     else:
